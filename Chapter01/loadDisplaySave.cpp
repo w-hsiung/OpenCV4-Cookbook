@@ -84,7 +84,7 @@ int main ()
                     // specifying a positive value will wait for
                     // the given amount of msec
 
-    cv::imwrite(".\\x64\\Debug\\output.bmp", result); // save result
+    cv::imwrite(".\\..\\output\\output.bmp", result); // save result
     
     // create another image window named
     cv::namedWindow("Drawing on an Image"); // define the window
