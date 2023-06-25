@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "opencv4-cookbook",
+  "version-string": "1.0.0",
+  "dependencies": [
+    "opencv4"
+  ],
+  "builtin-baseline": "288e8bebf4ca67c1f8ebd49366b03650cfd9eb7d",
+  "overrides": [
+    { "name": "opencv4", "version": "4.7.0#6" }
+  ]
+}
