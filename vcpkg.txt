@@ -1,0 +1,37 @@
+baseline: 288e8bebf4ca67c1f8ebd49366b03650cfd9eb7d
+
+opencv4         4.7.0#6     computer vision library
+opencv4[ade]                graph api
+opencv4[contrib]            opencv_contrib module
+opencv4[cuda]               CUDA support for opencv
+opencv4[cudnn]              cuDNN support for opencv
+opencv4[dc1394]             Dc1394 support for opencv
+opencv4[default-features]   Platform-dependent default features
+opencv4[dnn]                Enable dnn module
+opencv4[dnn-cuda]           Build dnn module with CUDA support
+opencv4[eigen]              Eigen support for opencv
+opencv4[ffmpeg]             ffmpeg support for opencv
+opencv4[freetype]           Freetype support for opencv
+opencv4[gdcm]               GDCM support for opencv
+opencv4[gstreamer]          gstreamer support for opencv
+opencv4[gtk]                GTK support for opencv
+opencv4[halide]             Halide support for opencv
+opencv4[ipp]                Enable Intel Integrated Performance Primitives
+opencv4[jasper]             JPEG 2000 support for opencv
+opencv4[jpeg]               JPEG support for opencv
+opencv4[lapack]             LAPACK support for opencv
+opencv4[nonfree]            allow nonfree and unredistributable libraries
+opencv4[openexr]            OpenEXR support for opencv
+opencv4[opengl]             opengl support for opencv
+opencv4[openmp]             Enable openmp support for opencv
+opencv4[ovis]               opencv_ovis module
+opencv4[png]                PNG support for opencv
+opencv4[python]             Python wrapper support for opencv
+opencv4[qt]                 Qt GUI support for opencv
+opencv4[quirc]              Enable QR code module
+opencv4[sfm]                opencv_sfm module
+opencv4[tbb]                Enable Intel Threading Building Blocks
+opencv4[tiff]               TIFF support for opencv
+opencv4[vtk]                vtk support for opencv
+opencv4[webp]               WebP support for opencv
+opencv4[world]              Compile to a single package support for opencv
