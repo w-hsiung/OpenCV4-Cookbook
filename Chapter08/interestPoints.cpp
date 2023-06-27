@@ -30,7 +30,7 @@ int main()
 	// Harris:
 
 	// Read input image
-	cv::Mat image= cv::imread("church01.jpg",0);
+	cv::Mat image= cv::imread(".\\..\\images\\church01.jpg",0);
 	if (!image.data)
 		return 0; 
 
@@ -76,7 +76,7 @@ int main()
 	// GFTT:
 
 	// Read input image
-	image= cv::imread("church01.jpg",0);
+	image= cv::imread(".\\..\\images\\church01.jpg",0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -105,7 +105,7 @@ int main()
 	cv::imshow("GFTT",image);
 
 	// Read input image
-	image= cv::imread("church01.jpg",0);
+	image= cv::imread(".\\..\\images\\church01.jpg",0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -124,7 +124,7 @@ int main()
 	// FAST feature:
 
 	// Read input image
-	image= cv::imread("church01.jpg",0);
+	image= cv::imread(".\\..\\images\\church01.jpg",0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -143,7 +143,7 @@ int main()
 
 	// FAST feature without non-max suppression
 	// Read input image
-	image= cv::imread("church01.jpg",0);
+	image= cv::imread(".\\..\\images\\church01.jpg",0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -161,7 +161,7 @@ int main()
 	cv::imshow("FAST Features (all)",image);
 	
 	// Read input image
-	image= cv::imread("church01.jpg",0);
+	image= cv::imread(".\\..\\images\\church01.jpg",0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -225,7 +225,7 @@ int main()
 	// SURF:
 
 	// Read input image
-	image = cv::imread("church01.jpg", 0);
+	image = cv::imread(".\\..\\images\\church01.jpg", 0);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -249,7 +249,7 @@ int main()
 	std::cout << "Number of SURF keypoints: " << keypoints.size() << std::endl; 
 
 	// Read a second input image
-	image= cv::imread("church03.jpg", cv::IMREAD_GRAYSCALE);
+	image= cv::imread(".\\..\\images\\church03.jpg", cv::IMREAD_GRAYSCALE);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -266,14 +266,14 @@ int main()
 	// SIFT:
 
 	// Read input image
-	image= cv::imread("church01.jpg", cv::IMREAD_GRAYSCALE);
+	image= cv::imread(".\\..\\images\\church01.jpg", cv::IMREAD_GRAYSCALE);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
 
 	keypoints.clear();
 	// Construct the SIFT feature detector object
-	cv::Ptr<cv::xfeatures2d::SiftFeatureDetector> ptrSIFT = cv::xfeatures2d::SiftFeatureDetector::create();
+	cv::Ptr<cv::SIFT> ptrSIFT = cv::SIFT::create();
 	// detect the keypoints
 	ptrSIFT->detect(image, keypoints);
 
@@ -291,7 +291,7 @@ int main()
 	// BRISK:
 
 	// Read input image
-	image= cv::imread("church01.jpg", cv::IMREAD_GRAYSCALE);
+	image= cv::imread(".\\..\\images\\church01.jpg", cv::IMREAD_GRAYSCALE);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
@@ -320,7 +320,7 @@ int main()
 	// ORB:
 
 	// Read input image
-	image= cv::imread("church01.jpg", cv::IMREAD_GRAYSCALE);
+	image= cv::imread(".\\..\\images\\church01.jpg", cv::IMREAD_GRAYSCALE);
 	// rotate the image (to produce a horizontal image)
 	cv::transpose(image, image);
 	cv::flip(image, image, 0);
